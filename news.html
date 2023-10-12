@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="banner.ico" />+
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <link rel="stylesheet" type="text/css" href="layout.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake</title>
+</head>
+
+<body>
+  <header>
+    <h1>Snake</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="scores.html">HighScores</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="s6JM6d" id="center_col">
+      <style data-iml="1697138163245">
+        .V5qaIc {
+          padding-bottom: 16px
+        }
+
+        .SoaBEf {
+          margin: 0 0 29px
+        }
+
+        .uZ9otd {
+          margin: 0 0 44px
+        }
+
+        .SoaBEf.pvFOzb {
+          margin-bottom: 44px
+        }
+
+        .SoaBEf.R24aHf {
+          margin-bottom: 0
+        }
+
+        .uZ9otd.R24aHf {
+          margin-bottom: 0
+        }
+
+        .AZtVbe {
+          margin-bottom: 29px
+        }
+
+        .Njmbc {
+          border-bottom-color: #3c4043
+        }
+
+        .vJOb1e {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between
+        }
+
+        .RFVcqe {
+          flex-direction: row
+        }
+
+        .FAkayc {
+          display: flex;
+          justify-content: center
+        }
+
+        .aIfcHf .FAkayc {
+          margin: 16px 0 16px 16px
+        }
+
+        .aIfcHf.RFVcqe .FAkayc {
+          margin: 16px 16px 16px 0
+        }
+
+        .iRPxbe {
+          flex-grow: 1;
+          width: 0;
+          position: relative
+        }
+
+        .aIfcHf .iRPxbe {
+          padding: 16px 0 40px
+        }
+
+        .y1kYce .iRPxbe {
+          padding: 16px 0 24px
+        }
+
+        .qlOiDc.aIfcHf .FAkayc {
+          margin-top: 0;
+          margin-bottom: 0
+        }
+
+        .qlOiDc.aIfcHf .iRPxbe {
+          margin-top: 0;
+          margin-bottom: 0;
+          padding: 0 0 24px
+        }
+
+        .WlydOe {
+          outline-offset: -1px;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+        }
+
+        .WlydOe:hover {
+          text-decoration: none
+        }
+
+        .YEMaTe {
+          overflow: hidden;
+          position: relative
+        }
+
+        .JFSfwc {
+          border-radius: 8px
+        }
+
+        .BYbUcd {
+          overflow: hidden;
+        }
+
+        .BYbUcd img {
+          height: 100%;
+          width: 100%
+        }
+
+        .MgUUmf {
+          overflow: hidden;
+          text-align: left;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-bottom: 8px
+        }
+
+        .sL0zmc {
+          display: inline-block;
+          vertical-align: top
+        }
+
+        .kJ8M3e {
+          color: #9aa0a6
+        }
+
+        .QyR1Ze {
+          display: inline-block;
+          vertical-align: top;
+          background-color: #fff;
+          border-radius: 2px
+        }
+
+        a:hover .n0jPhd {
+          text-decoration: underline
+        }
+
+        .nDgy9d {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          white-space: normal
+        }
+
+        .jBgGLd {
+          white-space: nowrap
+        }
+
+        .GI74Re {
+          font-size: 14px;
+          line-height: 22px;
+          margin: 0;
+          color: #bdc1c6;
+        }
+
+        .lO8SBd {
+          border: 0;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px
+        }
+
+        .rbYSKb {
+          color: #9aa0a6;
+          left: 0;
+          line-height: 16px;
+          position: absolute;
+          width: calc(100% - 32px);
+          margin: 0 16px;
+          font-size: 14px;
+        }
+
+        .LfVVr.rbYSKb {
+          width: 100%;
+          margin: 0
+        }
+
+        .bHOicb {
+          white-space: normal
+        }
+
+        .upzbbb {
+          overflow-x: scroll
+        }
+
+        .HSrbLb {
+          color: #81c995
+        }
+
+        .uhHOwf {
+          position: relative
+        }
+
+        .uhHOwf::after {
+          background-color: rgba(0, 0, 0, 0.03);
+          bottom: 0;
+          content: "";
+          display: block;
+          left: 0;
+          pointer-events: none;
+          position: absolute;
+          right: 0;
+          top: 0
+        }
+
+        .uhHOwf img {
+          display: block
+        }
+
+        sentinel {}
+
+        g-img {
+          display: block
+        }
+
+        g-img {
+          height: 100%
+        }
+
+        .YQ4gaf {
+          display: block;
+          border: 0
+        }
+
+        .u9wH7d .YQ4gaf {
+          object-fit: fill
+        }
+
+        .mNsIhb .YQ4gaf {
+          object-fit: cover
+        }
+
+        .tb08Pd .YQ4gaf {
+          object-fit: contain
+        }
+
+        sentinel {}
+
+        .ZGomKf {
+          overflow: hidden
+        }
+
+        sentinel {}
+
+        .AaVjTc a:link {
+          display: block;
+          color: #8ab4f8;
+          font-weight: normal
+        }
+
+        .AaVjTc td {
+          padding: 0;
+          text-align: center
+        }
+
+        .YyVfkd {
+          color: #bdc1c6;
+          font-weight: normal;
+        }
+
+        .AaVjTc {
+          margin: 30px auto 30px
+        }
+
+        .SJajHc {
+          background: url(/images/nav_logo321_hr.webp) no-repeat;
+          background-size: 167px;
+          overflow: hidden;
+          background-position: 0 0;
+          height: 40px;
+          display: block
+        }
+
+        .NVbCr {
+          cursor: pointer
+        }
+      </style>
+      <div id="taw">
+        <div id="oFNiHe" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQL3oECAEQAw"></div>
+        <div id="tvcap"></div>
+      </div>
+      <div class="eqAnXb" id="res" role="main">
+        <div id="topstuff"></div>
+        <div id="search">
+          <div data-hveid="CAEQBQ" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQGnoECAEQBQ">
+            <h1 class="bNg8Rb OhScic zsYMMe BBwThe"
+              style="clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px;z-index:-1000;-webkit-user-select:none">
+              Search Results</h1>
+            <div class="v7W49e" eid="uUUoZb-9C5qXxc8PzKgd" data-async-context="query:snake%20game%20news" id="rso">
+              <h2 class="bNg8Rb OhScic zsYMMe BBwThe"
+                style="clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px;z-index:-1000;-webkit-user-select:none">
+                Main results</h2>
+              <div class="MjjYud">
+                <div data-hveid="CBsQAA" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQyIQJKAB6BAgbEAA">
+                  <div class="SoaBEf" data-hveid="CAsQAA">
+                    <div>
+                      <div data-hveid="CAcQAA" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxPQBKAB6BAgHEAA"><a
+                          jsname="YKoRaf" class="WlydOe"
+                          href="https://www.creativebloq.com/news/spotify-secret-snake-game" data-jsarwt="1"
+                          data-usg="AOvVaw0-98-wXaxflsBf4pbkrn5o"
+                          data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxfQBKAB6BAgHEAE">
+                          <div class="vJOb1e aIfcHf qlOiDc">
+                            <div class="FAkayc">
+                              <div class="YEMaTe JFSfwc" style="background-color:#111;height:92px;width:92px">
+                                <div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_1"
+                                    src="data:image/jpeg;base64,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"
+                                    data-iml="1697138163245" data-atf="1" data-frt="0"></div>
+                              </div>
+                            </div>
+                            <div class="iRPxbe">
+                              <div class="MgUUmf NUnG9d"><g-img class="QyR1Ze ZGomKf" style="margin-right:8px"><img
+                                    id="dimg_3"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABvUlEQVQ4jY2Qz0tUURTHP2feTE32KkeniBoqXAwJokEq1DIicmMUtBFCgsCiFv0HbkRGXASiCNMmcCH9GFzURgiECoUWBuZCgllEpoXUzDA6RvPeuy7O/HpM2By4nHu/93y/55yvmPfPB3iZGKGQa6bROHEuzcPpO5yKr4kZjOUp/rEbJpfj0s1ZHiUHgj6yMf8nimhp/ldUgGDlwwrC/SmI94DnwdIcrL6DoQn9d4own4T5pyCClGiBikDsPFy+BTs5CFhwfQiORSEag+xPvd94DIEqxS8QCmv++BrSyypihRRbTMHWt9JbfAJB6kLg+xewm8F1FDrZBk1HYTdf51O9gACpMTWr66pi1+5pXpgB41WM9K9QDgPcHYfJz3CkVbE3k7CZht5+NfufHtRG+DDYLdVOvzd0fAn4uvtXcP5q7roCdkR39VzFLvbB8TPgOft4sL4GKwvQdkGLPryA3BZsZ+Bsh4q9fabG1kzhnyBxW3csdxeBB+0lb2ownwcHDhUqLxEtqnXac+sxgO1sxLiOZQ2PJgqS/tQNAlao2NDBQObHaTnYtIMxBs91xThFq+HzdbXTPBl8ZXbz9h49CMJOVgMbRQAAAABJRU5ErkJggg=="
+                                    style="border-radius:2px 2px 2px 2px" class="YQ4gaf zr758c" height="16" width="16"
+                                    alt="" data-iml="1697138163245" data-atf="1" data-frt="0"></g-img><span>Creative
+                                  Bloq</span></div>
+                              <div class="n0jPhd ynAwRc MBeuO nDgy9d" aria-level="3" role="heading"
+                                style="-webkit-line-clamp:3">Spotify's Snake game is completely random and I love it
+                              </div>
+                              <div class="GI74Re nDgy9d" style="margin-top:8px;-webkit-line-clamp:3">Long before the
+                                dawn of Pokémon GO and Candy Crush, one game dominated our
+                                phones: good old-fashioned Snake. Now music streaming service...</div><span
+                                class="lO8SBd" tabindex="-1">.</span>
+                              <div class="OSrXXb rbYSKb LfVVr" style="bottom:0px"><span>3 weeks ago</span></div>
+                            </div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                  <div class="SoaBEf" data-hveid="CBkQAA">
+                    <div>
+                      <div data-hveid="CBEQAA" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxPQBKAB6BAgREAA"><a
+                          jsname="YKoRaf" class="WlydOe"
+                          href="https://gameishard.gg/news/the-evolution-of-mobile-gaming-from-snake-to-genshin-impact/117967/"
+                          data-jsarwt="1" data-usg="AOvVaw0k4sVitBXmwNAkeAYdFvvq"
+                          data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxfQBKAB6BAgREAE">
+                          <div class="vJOb1e aIfcHf qlOiDc">
+                            <div class="FAkayc">
+                              <div class="YEMaTe JFSfwc" style="background-color:#1f374c;height:92px;width:92px">
+                                <div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_33"
+                                    src="data:image/jpeg;base64,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"
+                                    data-iml="1697138163245" data-atf="1" data-frt="0"></div>
+                              </div>
+                            </div>
+                            <div class="iRPxbe">
+                              <div class="MgUUmf NUnG9d"><g-img class="QyR1Ze ZGomKf" style="margin-right:8px"><img
+                                    id="dimg_35"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAUVBMVEVHcExPT0/yTVhISEjzS1ZHR0c8PDwAAADzS1ZFRUVQUFBLS0vxSVTsLj3yRVFOTk5SXVzrIDHxPEnTMz+XRUo+U1J/TVDfQk20O0NiRUe3REsDalF0AAAADXRSTlMA805wtUkKArFOtXFPNAt3awAAAGxJREFUGJWFz+sKgCAMhuHOZqWrb2qH+7/QZlIUBb0wYc9+mWW/qdfa6J6o1LruiOpGLKdbucD4SGC6xZOAMbyYGBt2CcBjEAjRBQA47xmenQMErLXzGmARNpyQmuMjUFTtVTV8/0Ydo455n3dXCghgQpqhxAAAAABJRU5ErkJggg=="
+                                    style="border-radius:2px 2px 2px 2px" class="YQ4gaf zr758c" height="16" width="16"
+                                    alt="" data-iml="1697138163245" data-atf="1" data-frt="0"></g-img><span>Game Is
+                                  Hard</span></div>
+                              <div class="n0jPhd ynAwRc MBeuO nDgy9d" aria-level="3" role="heading"
+                                style="-webkit-line-clamp:3">The Evolution of Mobile Gaming: From Snake to Genshin
+                                Impact</div>
+                              <div class="GI74Re nDgy9d" style="margin-top:8px;-webkit-line-clamp:3">The Evolution of
+                                Mobile Gaming: From Snake to Genshin Impact - Game Is Hard.</div><span class="lO8SBd"
+                                tabindex="-1">.</span>
+                              <div class="OSrXXb rbYSKb LfVVr" style="bottom:0px"><span>1 month ago</span></div>
+                            </div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                  <div class="SoaBEf" data-hveid="CAwQAA">
+                    <div>
+                      <div data-hveid="CAgQAA" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxPQBKAB6BAgIEAA"><a
+                          jsname="YKoRaf" class="WlydOe"
+                          href="https://www.news24.com/news24/tech-and-trends/news/we-wanted-to-give-our-users-a-moment-of-joy-eskomsepush-on-new-snake-game-20230606"
+                          data-jsarwt="1" data-usg="AOvVaw1l2Kbp1WoT2zH94xO716CB"
+                          data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxfQBKAB6BAgIEAE">
+                          <div class="vJOb1e aIfcHf qlOiDc">
+                            <div class="FAkayc">
+                              <div class="YEMaTe JFSfwc" style="background-color:#111;height:92px;width:92px">
+                                <div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_5"
+                                    src="data:image/jpeg;base64,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"
+                                    data-iml="1697138163245" data-atf="1" data-frt="0"></div>
+                              </div>
+                            </div>
+                            <div class="iRPxbe">
+                              <div class="MgUUmf NUnG9d"><g-img class="QyR1Ze ZGomKf" style="margin-right:8px"><img
+                                    id="dimg_7"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAWlBMVEVHcEz////aAATmam3////////////////////////1wsTByNz97/B/jrn75ebfJy741tf+9fXrhIe3wNf4+/3x4eTtm52lsM5LY6Foeq3jUlbk6PDvqapwgLA4Mv4GAAAACnRSTlMA////kZzO+tgcP38raQAAAJFJREFUGJVlTwkOwyAMI4GWKxxFFT33/28uFDRpm4UscJzgCMGwymhtlBUDEwxM/T3DB3OvX2ELwftjezwW4PLh8PvL7+yxQj3eFVY+fFHCMJMj5hiZjNAAGSVmIJQs6CZABFkhlS60FnBI9XbyaWlDC0bCcibXhtpWXxbKuZ7UvuVgd0pYWJcj/G/0/+W+138DDtoFn/VPJhwAAAAASUVORK5CYII="
+                                    style="border-radius:2px 2px 2px 2px" class="YQ4gaf zr758c" height="16" width="16"
+                                    alt="" data-iml="1697138163245" data-atf="1"
+                                    data-frt="0"></g-img><span>News24</span></div>
+                              <div class="n0jPhd ynAwRc MBeuO nDgy9d" aria-level="3" role="heading"
+                                style="-webkit-line-clamp:3">'We wanted to give our users a moment of joy': EskomSePush
+                                on new 'Snake'
+                                game</div>
+                              <div class="GI74Re nDgy9d" style="margin-top:8px;-webkit-line-clamp:3">EskomSePush
+                                recently released a nifty user interface update, which provides
+                                users with a timeline until load shedding will hit and a hidden...</div><span
+                                class="lO8SBd" tabindex="-1">.</span>
+                              <div class="OSrXXb rbYSKb LfVVr" style="bottom:0px"><span>Jun 7, 2023</span></div>
+                            </div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                  <div class="SoaBEf" data-hveid="CBQQAA">
+                    <div>
+                      <div data-hveid="CA4QAA" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxPQBKAB6BAgOEAA"><a
+                          jsname="YKoRaf" class="WlydOe" href="https://www.bbc.com/pidgin/articles/c80y0rg549xo"
+                          data-jsarwt="1" data-usg="AOvVaw1D5kSzdUZgabKz1Opsl6NT"
+                          data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxfQBKAB6BAgOEAE">
+                          <div class="vJOb1e aIfcHf qlOiDc">
+                            <div class="FAkayc">
+                              <div class="YEMaTe JFSfwc" style="background-color:#c0c2bf;height:92px;width:92px">
+                                <div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_17"
+                                    src="data:image/jpeg;base64,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"
+                                    data-iml="1697138163245" data-atf="5" data-frt="0"></div>
+                              </div>
+                            </div>
+                            <div class="iRPxbe">
+                              <div class="MgUUmf NUnG9d"><g-img class="QyR1Ze ZGomKf" style="margin-right:8px"><img
+                                    id="dimg_23"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABlBMVEX///8AAABVwtN+AAAAFElEQVQYlWNgoA9gBAIkgiwBegAAGpAAMQ/rZmUAAAAASUVORK5CYII="
+                                    style="border-radius:2px 2px 2px 2px" class="YQ4gaf zr758c" height="16" width="16"
+                                    alt="" data-iml="1697138163245" data-atf="1" data-frt="0"></g-img><span>BBC</span>
+                              </div>
+                              <div class="n0jPhd ynAwRc MBeuO nDgy9d" aria-level="3" role="heading"
+                                style="-webkit-line-clamp:3">Snake bite game: ‘I dey worried for my pikin’</div>
+                              <div class="GI74Re nDgy9d" style="margin-top:8px;-webkit-line-clamp:3">Parents of school
+                                pikins wey get mark for back of dia hands after dem play
+                                snake bite game for Asaba, Delta State for southern Nigeria dey...</div><span
+                                class="lO8SBd" tabindex="-1">.</span>
+                              <div class="OSrXXb rbYSKb LfVVr" style="bottom:0px"><span>May 26, 2023</span></div>
+                            </div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                  <div class="SoaBEf" data-hveid="CBoQAA">
+                    <div>
+                      <div data-hveid="CBIQAA" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxPQBKAB6BAgSEAA"><a
+                          jsname="YKoRaf" class="WlydOe"
+                          href="https://www.mensjournal.com/news/snake-interrupts-cricket-match-sri-lanka"
+                          data-jsarwt="1" data-usg="AOvVaw0cGlS1ZxFUFjg_A_EuZ__5"
+                          data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxfQBKAB6BAgSEAE">
+                          <div class="vJOb1e aIfcHf qlOiDc">
+                            <div class="FAkayc">
+                              <div class="YEMaTe JFSfwc" style="background-color:#111;height:92px;width:92px">
+                                <div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_29"
+                                    src="data:image/jpeg;base64,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"
+                                    data-iml="1697138163245" data-atf="4" data-frt="0"></div>
+                              </div>
+                            </div>
+                            <div class="iRPxbe">
+                              <div class="MgUUmf NUnG9d"><g-img class="QyR1Ze ZGomKf" style="margin-right:8px"><img
+                                    id="dimg_31"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAANlBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAR2LVAAAAEXRSTlMAFmu1p1LIjtZEKTsH+519+a3IsI8AAABkSURBVBiVXc9XCsAwDANQOXunuv9lmy6o82PMwxgJ8K4ALU4AMsaakRbwTGvN5A0UBA1GqCHNDdh3oIZE6qcuHEbBMCHrC8gVrP1gJQ2ux6rA0pUNenrhKWe+NFJl1a8FJecKnBvJB8agN8/bAAAAAElFTkSuQmCC"
+                                    style="border-radius:2px 2px 2px 2px" class="YQ4gaf zr758c" height="16" width="16"
+                                    alt="" data-iml="1697138163245" data-atf="4" data-frt="0"></g-img><span>Men's
+                                  Journal</span></div>
+                              <div class="n0jPhd ynAwRc MBeuO nDgy9d" aria-level="3" role="heading"
+                                style="-webkit-line-clamp:3">Video Shows Snake Interrupting Cricket Match in Sri Lanka
+                              </div>
+                              <div class="GI74Re nDgy9d" style="margin-top:8px;-webkit-line-clamp:3">A snake entered the
+                                field and disrupted Monday's Lanka Premier League match
+                                between Galle Titans and the Dambulla Aura at Sri Lanka's R.</div><span class="lO8SBd"
+                                tabindex="-1">.</span>
+                              <div class="OSrXXb rbYSKb LfVVr" style="bottom:0px"><span>Aug 1, 2023</span></div>
+                            </div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                  <div class="SoaBEf" data-hveid="CBcQAA">
+                    <div>
+                      <div data-hveid="CBYQAA" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxPQBKAB6BAgWEAA"><a
+                          jsname="YKoRaf" class="WlydOe" href="https://www.techradar.com/news/metal-gear-solid-6"
+                          data-jsarwt="1" data-usg="AOvVaw1esAb5HTATJTdkv4vSGaEX"
+                          data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxfQBKAB6BAgWEAE">
+                          <div class="vJOb1e aIfcHf qlOiDc">
+                            <div class="FAkayc">
+                              <div class="YEMaTe JFSfwc" style="background-color:#111;height:92px;width:92px">
+                                <div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_37"
+                                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAFBgIEBwMBCAD/xAA2EAACAQMDAgMFBgYDAQAAAAABAgMABBEFEiExQQYTUSJhcYGRFCMyQqHBBxWx0eHwUpLxYv/EABgBAAMBAQAAAAAAAAAAAAAAAAIDBAEA/8QAIBEAAwACAgIDAQAAAAAAAAAAAAECESEDMRJBE1FhBP/aAAwDAQACEQMRAD8AvfxXQwiCXYp3x7A3dcNk/tSj4ZlL6mhOeRjJNaL/ABNtGudER9hDRyfixxzxj64pF8KabIL8u5IMbYPORUXK+y7+bpBvW7SOOW3k8xUeKTcz8YAYbf6mlnTZTo/itNKvHLxH2YCwwELDIPzxitOm0oTwO8qAhsYB64B60F1LQrG/eMXcLPNE4aKcEh1I6YPx7Hip4pJYY+nncla904x3sN6Y2KxqyuAucjr0+X7d6JTGN1xBtxj2SB1outhJsQzyDZjkL3qLwRW0Y8mIRAfmAJ/WsxlHeayA7ze8QTZIzN76GPahXDz+zu4IzyKZJUkX2IhuZuSxwaV/EN5/L48Kvm3UpKwxdSW/3qaKVl4N+TCAfiK68hxaWgBuJM4zzsH/ACNU7CNLZDGnPHJPVs9TViHTJ8+fNumup+ZHxxn0HuFX4dJaMhpfxMdozVCwtE957YpaCzxeKbN0xuS4Rh8mHNfQzalYA+0xz8KwWxttniopGvKsXGfTrT+JmPU5NOJWkPniALqOkXdv5JYshVQeOex+VZz4RjSwv3F0wVBPsck8DjK/2+davPPasC8pxt5PvrLdUjS4/mUsIXbNGX24z+F+fpSOb0U/z9NDkNatLyYQWssMijhljkUnH1q5HawO2RtCj4E/U1hVykSSkxKAFONw61csfEuo2Ug+y3bKg/K43A/Wl/Ed5G2G2gTo3A6L6H9qhcBXByAFx0HurMovH98iYuY43wPxR8H6f5qivjfULi/aK3gdpfLZIl4yzn8xHQADPNcor6OyvsfNc1i30kRMR5kkwK29tFy8rHHAHX59qC6dpiid73UtsuoS/jK8pbr/AMB7/U0mwavcaJeS3t8i3966hFcufuR3UZ7H9qHaj4s1W6D7XEcZOAinoKYofSBdY7NCvNZ07SXkVCJ5W5RQOE9eaX5tf3ucINuc8EnJ9aQDduzB5DIW6gk0Y0cT3MsfnO+zcPZ4HHvpihSA6dBq3iVvEMk2NmVBBHY4zTCJwK4eHNGfWPEs9vbSINkW8lj29kU2y+A9QVvu5IGHruIo10LrsbZNOkcnPPyrMNNjn03xEbTUY28u5lYFW7ByR/XFMFp/FvSVgA1CC4S4BIIhTcuM8d6BeL/GNprslpJp0JTAISSQYfOQfX3UrkWZHcLapoWtY0qS1uruxJ+9hkIXP516g/TFLc0DJJhsgjqKftc0vVdQeLU4GtppQgBWMFGkXt14JHxpau5oyxW4t3jn6NHIhBBoYrQVSCo0ZuMCi3hTR7nVvEdvHa5Cx5eV+yqP84qFjYXuoXaw2kD5Y4HHeti8LaGuk2KRsB9pYfeTIOc+nwrqvGjPHGxB8caUVuIkI67gMdPWkWXSZF3EKfZOCMVsvjWLM8IafGBzhBk9OlIl48YlxIhy49kkk/8AlHGpOqlVCrDZqeHVgfhRzTo44IfOlOHK4VO599XF0+OWIOrbHPfFCpFMMkrMxbZnmtwZldFvQdUn07XZL22uTDuV0Yg9enH6fpTK3i69Jz/NJP8AsaTNHuiskUHGJATkdc5/zV/UZzb3HlwzbgACcx96XVVnA6OLj8csXpbhrydCoGyMBiB1bPH70et7OFHjYrzGDgehPeh2n2iidZ1ChSmWAHv4BourcGut+kLhe2OHh26D2It5HV9oyO/s9v7UzXsdobOGW6gjkCD7tyoYrWaeGtUjiuJERlS7hZducZcE8jn3D9adrzUUjjtZIGUxTDIQngHBNT1Llj9UXtMhZMX5ceUDgJGvAXPNGLW68+bfayrLAVyCpyKR7q/vZ4/NsIiMZ3FXzvx7v393el228RXuj3EjwJtkkbEgXjJz3Xpn+9ak2Y50P3jK5iSBd0YLgjkjp86zfWL6C8lWC2kyVbDFegPpmhfiHxbrGogRTzHyieEUfHr39aF2+pXMG0RIoZRwAOD8R9armWkStrIz29zNCNksJY/lJPFC9UuG9qIgHdy2PnX5NYkCOkyqSG4Hcf6aFvc75JSFOXP05okgWy1bzj2AI03r3I5NXprVdQla4fVI4i35GOCKCVJbtQNsnLDgk96CpecoKOTWGGbFBDaIoGCeSDXdXyDzQa51uBSVBZjjGAtV49YUnOWGf/nND4U9jPOVojqEz2mpfaVUlQehPX/FOGm3jahYRy2jExxtnyN2WUgfiHuNJt5cJdgIoYsT3UivdEuptOunQH2kOFG7gg+vqKKozP6BF+Nfg96XFKYDtvZSrclS3T3D0rnqfntNJPHModsDJQeyOmAfhxXOxga9AuLSVVEpYMA34SPU+/1rhqGhyrI/225kLbc7N3Aqdaey9NY0gPfWM7qrSTW4C9ArY/rVGEB8s5GRkEiry6LDPJ5cTuX6/izXOexTT2ImcsceuMVTL9EvKt5wDgkYc5yEX5E+6vR1J7Hpn07VwuJg8mFbCL0Gag12inGaYSNlyqVwPvOnaprfQnqajI8btkMMY9a5GM9uECr7I9r96uRAQIA34QKhOB9oQY4DZ/36VFWMl2VfkEUL2M6ZYLmQbQCq/qaEXYMFwrgcdMH0opuOcelVNUUeRu7iunsywrpd+8DK4DOR7QBbg47Y+ZphufE1pqCpJepjjGSuD06e/sPrSZZndEufQVOUZXaegJIFA4TYyeSkghDq4sLn7TbM2Np7YyP9FC7zUpbyRmPK54znpUbaFJ7pIXztz2o2mj2o3Z3sB2JotSA/KxbKbutQaMAGjOoW0KW/mIgVge1DGGcijTyLqcPBUEXpXZVOOn6VfhjVYTgcg9e9e7RW5Owf/9k="
+                                    data-iml="1697138163245" data-atf="4" data-frt="0"></div>
+                              </div>
+                            </div>
+                            <div class="iRPxbe">
+                              <div class="MgUUmf NUnG9d"><g-img class="QyR1Ze ZGomKf" style="margin-right:8px"><img
+                                    id="dimg_39"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACTUlEQVQ4jYWSQUhUYRSFv/uPM29ksEWaTY4SSUbSIkgzCBI3LSoi3AQRRZDgIqQM25iLRzOTEgRSrVq0iFpkuQijTQRGGG0kNwliITY9tcLCGWR848y7LeYlZqZne+85nHvPEXw4ocQZFVoUXQAcgxmfdSuGG2lfZgPIKoFHKpxdM/2J8gyTj1dn7a8bC4TjF1WpBxGgHjgAbPfHiyg3Y7l8n2B76wqshTIQmLEmTnjQJcgRf/vJwlL+/D7s3L8OShOHPY9GEUmLyGRVdvd74XRBUXGs5GWgD7CAoZh7/ZQgutkPvgG35txtdxtpX3asxEmFQSAIdFa7Pf0AZsWyYUrhOTAMZPz7b0et769S2Ftjbs+QwBV/vW863Fv73x9MYYdDVkmbB0mBLaBv5tzKow3MFpxQ8B2ih4D+aren8y+BqYgdLV2MZKJcWwT4Erxx0BjzGij7YztlJY8J+lIhHXDzOwQgFY63iMp9oA7ICTzMufmOXdhLjhW/pMg9gbkqd0/1KL9MNPRjFqHciGk20+HeWlF5AdShzAOq0BaySu4AeG7kgUJaIeqUfmpqpH0ZkREAT70GU+J554AIogOxXL5S0P2Aq3BhCjtcw9WsoB8ARAt7ix0h5V+90yCUA4gno4LtVbmFST+FYLAsFPHrkilGJREAES/tZ1coUdW3CB0qdDlWwnOEJpQKhfGaTPd8kaAfFcmKMOZH91mFp4oZE0VlxkoOKrSudALSxpjjsWz3yHoxr4YUCQMBJzTRKmKaPdUZE+BxLNuT2owM8Bsr3/AwwroowAAAAABJRU5ErkJggg=="
+                                    style="border-radius:2px 2px 2px 2px" class="YQ4gaf zr758c" height="16" width="16"
+                                    alt="" data-iml="1697138163245" data-atf="4"
+                                    data-frt="0"></g-img><span>TechRadar</span></div>
+                              <div class="n0jPhd ynAwRc MBeuO nDgy9d" aria-level="3" role="heading"
+                                style="-webkit-line-clamp:3">Metal Gear Solid 6 - everything we know so far</div>
+                              <div class="GI74Re nDgy9d" style="margin-top:8px;-webkit-line-clamp:3">Metal Gear Solid 6
+                                hasn't been officially confirmed but we've gathered all
+                                the rumors and news we could get our hands on.</div><span class="lO8SBd"
+                                tabindex="-1">.</span>
+                              <div class="OSrXXb rbYSKb LfVVr" style="bottom:0px"><span>6 days ago</span></div>
+                            </div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                  <div class="SoaBEf" data-hveid="CBMQAA">
+                    <div>
+                      <div data-hveid="CAkQAA" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxPQBKAB6BAgJEAA"><a
+                          jsname="YKoRaf" class="WlydOe"
+                          href="https://www.abc.net.au/news/2023-09-16/snake-delays-aflw-clash-before-tigers-down-the-giants/102865156"
+                          data-jsarwt="1" data-usg="AOvVaw0Nk1RjCt-GWPKBrRYhut0R"
+                          data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxfQBKAB6BAgJEAE">
+                          <div class="vJOb1e aIfcHf qlOiDc">
+                            <div class="FAkayc">
+                              <div class="YEMaTe JFSfwc" style="background-color:#c5e3fd;height:92px;width:92px">
+                                <div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_11"
+                                    src="data:image/jpeg;base64,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"
+                                    data-iml="1697138163245" data-atf="4" data-frt="0"></div>
+                              </div>
+                            </div>
+                            <div class="iRPxbe">
+                              <div class="MgUUmf NUnG9d"><g-img class="QyR1Ze ZGomKf" style="margin-right:8px"><img
+                                    id="dimg_15"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAe1BMVEVHcEw/Pz+ioqJERETx8fEKCgoWFhb///////////9PT0+Dg4NUVFQXFxf///8nJydPT09eXl4AAABgYGBAQEBxcXF5eXk9PT3Q0NCsrKxkZGRgYGBLS0tPT09AQECCgoK0tLReXl4AAAA9PT01NTUoKChMTEwqKiofHx/bBZjiAAAAJHRSTlMA8oX9Qvz9MAkFmE6o5w/i/NZvl+eRxW5BWtn8gNa7sFPC//7JPXU2AAAAm0lEQVQYlWWPyRKCMBBEGzAkATcswH17EfX/v9AQOekcuqbeoRfp7+zMS85aJ/mZleqSwrkGzm7ZYHItgD6LQlZFWWh8eTAYuIxvBC0EdjU8WSXQRZBJA+9QJbC9Qy7N4br5gh7m0i7qF3SPkkEKAXNKIEQ36hsFk+loTznE7BRbRqlSsfYwNlJuWC/dGo7OFbz20zhvrZ/G/d4Hk6MUHe+dBHAAAAAASUVORK5CYII="
+                                    style="border-radius:2px 2px 2px 2px" class="YQ4gaf zr758c" height="16" width="16"
+                                    alt="" data-iml="1697138163245" data-atf="4" data-frt="0"></g-img><span>ABC</span>
+                              </div>
+                              <div class="n0jPhd ynAwRc MBeuO nDgy9d" aria-level="3" role="heading"
+                                style="-webkit-line-clamp:3">Red-bellied black snake delays GWS — Richmond AFLW game in
+                                Blacktown</div>
+                              <div class="GI74Re nDgy9d" style="margin-top:8px;-webkit-line-clamp:3">A red-bellied black
+                                snake delayed the AFLW clash between GWS and Richmond
+                                at Blacktown International Sportspark in Sydney's west by 30...</div><span
+                                class="lO8SBd" tabindex="-1">.</span>
+                              <div class="OSrXXb rbYSKb LfVVr" style="bottom:0px"><span>4 weeks ago</span></div>
+                            </div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                  <div class="SoaBEf" data-hveid="CBAQAA">
+                    <div>
+                      <div data-hveid="CAoQAA" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxPQBKAB6BAgKEAA"><a
+                          jsname="YKoRaf" class="WlydOe"
+                          href="https://www.sacbee.com/news/nation-world/national/article276149261.html" data-jsarwt="1"
+                          data-usg="AOvVaw2S5xGJ4aieOJY_qpH7uJCH"
+                          data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxfQBKAB6BAgKEAE">
+                          <div class="vJOb1e aIfcHf qlOiDc">
+                            <div class="FAkayc">
+                              <div class="YEMaTe JFSfwc" style="background-color:#ae9784;height:92px;width:92px">
+                                <div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_9"
+                                    src="data:image/jpeg;base64,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"
+                                    data-iml="1697138163245" data-atf="4" data-frt="0"></div>
+                              </div>
+                            </div>
+                            <div class="iRPxbe">
+                              <div class="MgUUmf NUnG9d"><g-img class="QyR1Ze ZGomKf" style="margin-right:8px"><img
+                                    id="dimg_13"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADG0lEQVQ4jU2SS2hcZRiGn/+fSzL3TjLjEFMDRqmx7aKxZlMFXUhviFhbUIlQRFQwG7ULUcGFolBciGARLTZBzKK10oJgoKZQsNhUCC3RVhuitTRNL5PMzDlnLuf2n89FQ/CFd/cuXh4edXDq4s6Jef9Qy3bKWikUq9FABAIoDTGtUYCIEIQRqUy2uv/hrjE1+P6PDSveW8jGPDp+iOW4YAwoRS6XBiKcpod4Aclsip5CGoXQNEkKpmbFnesLmSCxjE4r3tk9zAOVAs2WB0q43eiQynQzWM5z/q8bTJ69wj9z85TKBRI6jmMvZ7Vu2x3dtGjcus3Xk9N0BR6jj29g9LGHOH56li+/+Ymw6fDB3hFmPtzD1vtyrCxcxW/U0B2nrY1jI6060rK5cm6OianfAFiqOVy4tMDvv87x7LvjrNgtirkMbz79COHSEkGthmlaxE27SRiL0GJQ4lNMagCUCOnIx4sbTK2K64cA1G0bcSzCdo6EtNHiu0RuG+O2kbaDCTwAwjCktnANmf+TfU9tob9U4PK1Wxz84gd0dwy8DpHbIS6+R4RCE4LnImEAQG8hw4GxPfT3lXhrdAcTJ87w8qsfQ9MlM7yB0HMRfHQU+kSBSxT4EHhg7l4NQsPi9SVmTp/j8PFpnhzZxFefv01l8wCtfxeJIp8oDIhHJkIkRIjABBBFAFjNDke/n4abNzk2fpQTp8Z5bXQXI1uH2LbjDdyGQyKj0Yggq0UEWRUxHlNkevMwsB5I8e3JMwAMD93Po9u2wHIdhaD5f0TwgrsMjBE6ng9GgA6VnvzazPV8iOk140FrwiAEr8a6bAqAvnKRdDIBN65S2biRjw68BMDJn2eYPXsBVSqCgIo/uCswYSze05PnxWee4JXnt7O+r0Qsppn+5SLnZ//ghX3bKWa6OXLsFJ98NglGiJWKqLZtVG7zcw2n2ioU+ktsGhqkWq1zZ6WB1oqBe+8hn89Sr1tcuvw3sngHKr0kinmCmkOumLTUe58e2Xn4u6lDy7ZVFi8AEdCKNZqrbFRXku5UN1opPM9jXTpTfX3/7rH/AP8Ui+LKbMktAAAAAElFTkSuQmCC"
+                                    style="border-radius:2px 2px 2px 2px" class="YQ4gaf zr758c" height="16" width="16"
+                                    alt="" data-iml="1697138163245" data-atf="4" data-frt="0"></g-img><span>The
+                                  Sacramento Bee</span></div>
+                              <div class="n0jPhd ynAwRc MBeuO nDgy9d" aria-level="3" role="heading"
+                                style="-webkit-line-clamp:3">Watch as snake mimics nostalgic game in Arizona. ‘Nokia
+                                graphics sure have
+                                advanced’</div>
+                              <div class="GI74Re nDgy9d" style="margin-top:8px;-webkit-line-clamp:3">A Sonoran mountain
+                                kingsnake was spotted climbing up a wall in Coronado
+                                National Memorial in Arizona like the game Snake, a video shows.</div><span
+                                class="lO8SBd" tabindex="-1">.</span>
+                              <div class="OSrXXb rbYSKb LfVVr" style="bottom:0px"><span>Jun 6, 2023</span></div>
+                            </div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                  <div class="SoaBEf" data-hveid="CBUQAA">
+                    <div>
+                      <div data-hveid="CA8QAA" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxPQBKAB6BAgPEAA"><a
+                          jsname="YKoRaf" class="WlydOe"
+                          href="https://www.xfire.com/atomic-arcade-pre-production-g-i-joe-snake-eyes-game/"
+                          data-jsarwt="1" data-usg="AOvVaw0BgFxLQt578-ZAzG3ToDPZ"
+                          data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxfQBKAB6BAgPEAE">
+                          <div class="vJOb1e aIfcHf qlOiDc">
+                            <div class="FAkayc">
+                              <div class="YEMaTe JFSfwc" style="background-color:#111;height:92px;width:92px">
+                                <div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_19"
+                                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAAAQIDBAUGB//EADUQAAEEAQMBBAcGBwAAAAAAAAEAAgMRBAUSITFBUWGhBhMUInGBkQcjMlNy0TNSYrHB4fD/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQUCBAMG/8QAHhEAAwACAwEBAQAAAAAAAAAAAAECAxEhMUEEExL/2gAMAwEAAhEDEQA/APMNqeAnbUEcqZso6ANCUtFJzRakbHYWf60NTsz3R27oniHwVtsBL+iSXIxojtFvcOxv7rapvhGHKnmiJkVDceAFl5J9Y8ns7FpyZRkjLGxhgPbdlVRj7iGt5JNAV1XThhrmjmy5JfEmcWplLUnwZIHlkgburscDSzntpxXQeARiw9ve1W4nMMTN3UClXgH3rfHhMc7aSAgDoEbVabjm1FIRHJtcpKrfRXa0LEy1egx7B4S4sG8AjtV3OdHp+nSyyODXlpEY7XOrgBeFW3Sldm0lK2zltSznGZ8MB2sadpcOru/5Ki00AmV2gO+YQTXYVYiFC0iPkt29snY5W4CWxSTC/d90HuJ4/wC+IWeHgdLU3tI9Wxmw0LJ56k/6pb0eRo6dBPqGYImbnvdy49ST+/KNe9HzhQnJx52TxNIEgYD7pPcapw+Cvej+pww48sOPhZMmXJwXR7TTO2uetE/Vdfm6RlP0JuRmQCPDyWiP3nDcwuHuhwvgpi2eT44++j/UFFMAJnjucVZYx0WSGPFOY/afiCosvjJlH9RTN7O6bCL6LK17H9VGJG8crUnyWw0SVW1JzczCO0hfP4nStPwu5EnLQ3QM1jgxjz4JPTskS4EbL2hjncGupA/x5rBxzJjShwsEFdDqUjM3I0ySS/VSwuhLt1bXHpz4EgrqnEo+mbXXJy3kdYHL7OXlgki5ka4DwfagNVxf1WplwyQAxvJtpNteKqvG6We9pEY4HyKqEwjri6KTjuSl1x7eUMsngrRk6/7OdHZqmqvfNLBFFBEZSZYxJYBFgNPC2sn7RDruBl6adIl9le245Q9pMVfhc4BgroLo/VcvBlM0jQJBBI72zUbY7Y8ktiaObaCByXcE3W00B1WH69r49kzHSNabHrZnGvgBXKALerAN1aQtO5r37geOb7eFmZhvKkPirM+Q2WSItFBrdvW1SyXffv8AimNHQ6xO8y7OxM0yaSSQQnkFaOXhDIaXdqXSsEY8rpXD8ItR1kj89ellxX6b8NCDSo5Zo/cvvUHp1hs0/FwGRtDWvLzXw2/usHL9K9Sa/bjvjhHexgJ87WZqGs52pGP2/Kln9XewPI92+tV8FrD8edZJunwvDxy/RjcOZXLLDZHABwcQVFJI6qvjxVZuSaqvNBmvs81U0TmiRrQeqsRtYOaCptlrs80/2kgVtH1TMtEkz66FVXOTnSA9R5qMvb/L5oGkPcdrGnwULnbiSepQ59iq8ym2O5M0ehY8o7eikdMBHJ+k/wBlhtzdvSvqo5tQftIbXIpRF87bLLyzo53K/ifIKJSZFiUhw5HCiVpEYcDSUOTEqYD9yNyYhADi5NJQhAAkQlQBJ7RL+Y76o9fL+Y5RIS0h7Y573P8AxElNQhMQIQhAAhCEACEIQAIQhAH/2Q=="
+                                    data-iml="1697138163245" data-atf="4" data-frt="0"></div>
+                              </div>
+                            </div>
+                            <div class="iRPxbe">
+                              <div class="MgUUmf NUnG9d"><g-img class="QyR1Ze ZGomKf" style="margin-right:8px"><img
+                                    id="dimg_25"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAASFBMVEVHcEz/BGj/AmP/HXX/KHr/C2v/A2j/B2X/A1//AWX/CWv/Bmn/CGr/Bmn/Bmn/BGn/BWn/AGb/EW//NYT/BWn/AGj/D23/M4G7pV3QAAAAFHRSTlMAUST9/tpDGRA1qr18++3zZZKIh0C40JcAAACDSURBVBiVXY/ZDsMgDAQ5DJgjR9sF/v9Pa0KD1OwTOzJjWakZrx5xj84UP38gkCOvQuZ7gHttMDuOMI3B9Aqcrtl4gcyJBMTWZ1eABVASzQ/KYOR8r9UMbClmmBt47f1LHNCzF3nWToskqa3rIt59SMMmnWSdbj8pH81eurjucPcFI18WRAaRGxaxIQAAAABJRU5ErkJggg=="
+                                    style="border-radius:2px 2px 2px 2px" class="YQ4gaf zr758c" height="16" width="16"
+                                    alt="" data-iml="1697138163245" data-atf="4" data-frt="0"></g-img><span>Xfire</span>
+                              </div>
+                              <div class="n0jPhd ynAwRc MBeuO nDgy9d" aria-level="3" role="heading"
+                                style="-webkit-line-clamp:3">Atomic Arcade starts pre-production on G.I. Joe Snake Eyes
+                                game</div>
+                              <div class="GI74Re nDgy9d" style="margin-top:8px;-webkit-line-clamp:3">The upcoming video
+                                game by Atomic Arcade and Wizards of the Coast has
+                                already cleared the concept phase of its development.</div><span class="lO8SBd"
+                                tabindex="-1">.</span>
+                              <div class="OSrXXb rbYSKb LfVVr" style="bottom:0px"><span>Jul 22, 2023</span></div>
+                            </div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                  <div class="SoaBEf R24aHf" data-hveid="CBgQAA">
+                    <div>
+                      <div data-hveid="CA0QAA" data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxPQBKAB6BAgNEAA"><a
+                          jsname="YKoRaf" class="WlydOe"
+                          href="https://www.foxsports.com.au/afl/womens-afl/aflw-2023-game-delayed-after-snake-found-on-the-ground-video-greater-western-sydney-v-richmond-blacktown-international-sportspark-latest/news-story/5c9d5c557ecfa60a84c1ea8b87b34dc3"
+                          data-jsarwt="1" data-usg="AOvVaw2K6TubFLfrXbpjSCQWn3RS"
+                          data-ved="2ahUKEwj__ZOPnPGBAxWaS_EDHUxUBwAQxfQBKAB6BAgNEAE">
+                          <div class="vJOb1e aIfcHf qlOiDc">
+                            <div class="FAkayc">
+                              <div class="YEMaTe JFSfwc" style="background-color:#111;height:92px;width:92px">
+                                <div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_21"
+                                    src="data:image/jpeg;base64,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"
+                                    data-iml="1697138163245" data-atf="4" data-frt="0"></div>
+                              </div>
+                            </div>
+                            <div class="iRPxbe">
+                              <div class="MgUUmf NUnG9d"><g-img class="QyR1Ze ZGomKf" style="margin-right:8px"><img
+                                    id="dimg_27"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAQlBMVEUCGzTi4+a0uLx6f4n///8AABhGT14CGzQAAiYBGDKkp64AAAT4+fqanqTu7/GHjJSvs7jAxMhka3YrN0nQ0tUzPk9VdueaAAAACHRSTlPI////////x1SLsC4AAACrSURBVBiVNY9LEgQhCEMBgUHFb9v3v+qoU0Nlkcoi5MEnxmgmV9t+IJq8ra9Oq7dXLIIldwr6PBrIvRgwas4mIpZzVmQordaaEw71HlwLSOIxiBPXzo5iu4N7YH4qT+c3nlLmcYMdh/uFLXcmrouRT9AwSm6raw2KzUDKmBgGBVTUFQTKHLMYpUDaLbUCvofJj+UMc5CG9T+9YpMDF2ehlKjMeOAgXv5728EX2CAI2L2kh2AAAAAASUVORK5CYII="
+                                    style="border-radius:2px 2px 2px 2px" class="YQ4gaf zr758c" height="16" width="16"
+                                    alt="" data-iml="1697138163245" data-atf="4" data-frt="0"></g-img><span>Fox
+                                  Sports</span></div>
+                              <div class="n0jPhd ynAwRc MBeuO nDgy9d" aria-level="3" role="heading"
+                                style="-webkit-line-clamp:3">AFLW 2023: Game delayed after snake found on the ground,
+                                video, Greater
+                                Western Sydney v Richmond, Blacktown ...</div>
+                              <div class="GI74Re nDgy9d" style="margin-top:8px;-webkit-line-clamp:3">“The snake in the
+                                grass has been found.” It was the words from Fox Footy
+                                commentator Kelli Underwood as a sigh of relief went through...</div><span
+                                class="lO8SBd" tabindex="-1">.</span>
+                              <div class="OSrXXb rbYSKb LfVVr" style="bottom:0px"><span>4 weeks ago</span></div>
+                            </div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </main>
+  <footer>
+    <p>© Snake 2023</p>
+  </footer>
+</body>
+</html>

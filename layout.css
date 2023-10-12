@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+} 
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 0;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: green;
+  }
+
+
+  #gameCanvas {
+    border: 1px solid #999;
+    margin-bottom: 20px;
+  }
+  
+  #scoresTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #scoresTable th {
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #scoresTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+body {
+    margin: 0;
+    font-family: cursive;
+    background-color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: green;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+li {
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+nav a:hover {
+    color:turquoise;
+}
+
+footer{
+    padding: 20px 20px;
+    text-align: center;
+    background-color: azure;
+}
+footer p{
+    font-size: 14px;
+    color: #999;
+}
